@@ -16,10 +16,12 @@ Artigo: [Onion Architecture In .Net 5](https://medium.com/nerd-for-tech/onion-ar
 > por *Jay Krishna Reddy* <br />
 > no https://medium.com/nerd-for-tech
 
-
-Neste artigo critico basicamente o fato de usarmos na camada de **Domínio** componentes de
+* Neste artigo critico basicamente o fato de usarmos na camada de **Domínio** componentes de
 infraestrutura. No exemplo do artigo acoplamos os componentes do *Entity Framework* na camada,
 e no meu ponto de vista isso não é o ideal, pois a camada de domínio basicamente abstrai o
 nosso modelo de dados de negócio.
+* **BaseEntity.cs** é um ponto que vejo muita gente usando, mas de uma forma geral eu creio que
+  não se aplica bem para vários campos além da identificação. No meu caso eu optei por haver uma
+  interface base `IIdentifiable.cs` que cubra essa parte da identificação.
 
 [e5r]: https://github.com/e5r/e5r.architecture
