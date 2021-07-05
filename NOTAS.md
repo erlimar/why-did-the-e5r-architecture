@@ -28,7 +28,7 @@ Algumas notas sobre ensino da arquitetura
 
 - DDD e suas camadas
 - Camada cebola e a comunicação por interface
-- Porque não uso interface de serviços de negócio
+- Porque não uso interface de serviços de negócio?
 - Lazy load
 - Configuração/Opção/Preferência, Config/Option/Setting
 - Extensões
@@ -36,7 +36,7 @@ Algumas notas sobre ensino da arquitetura
 ### Estrutura da solução .NET
 
 Projetos .NET tem duas visões bastante distintas: a visão física no sistema de arquivos e a visão virtual na
-solução dentro da IDE. Nós procuramos mantê-las o mais parecidas, mas nem sempre é possível por uma série de
+solução dentro da IDE. Eu procuramo mantê-las o mais parecidas, mas nem sempre é possível por uma série de
 razões técnicas, normalmente envolvidas com o desenvolvimento multi-plataforma.
 
 Fisicamente, nossa estrutura de diretórios é parecida com essa:
