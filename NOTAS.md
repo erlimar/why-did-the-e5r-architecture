@@ -73,9 +73,9 @@ Source/
     Tool/
     Worker/
 Test
-  UnitTest/
-  IntegrationTest/
   End2EndTest/
+  IntegrationTest/
+  UnitTest/
 ```
 
 Destacamos:
@@ -136,6 +136,6 @@ Aqui os dividimos em quatro subcategorias/subdiretórios:
 
 Dividimos nossos testes em:
 
-* `UnitTest` - Teste das unidades isoladas de nosso negócio
-* `IntegrationTest` - Teste de integração entre nossos serviços de negócio e sua infraestrutura
 * `End2EndTest` - Testes de navegação do usuário final
+* `IntegrationTest` - Teste de integração entre nossos serviços de negócio e sua infraestrutura
+* `UnitTest` - Teste das unidades isoladas de nosso negócio
