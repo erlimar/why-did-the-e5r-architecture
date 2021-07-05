@@ -132,7 +132,7 @@ Aqui os dividimos em quatro subcategorias/subdiretórios:
 > interface com o usuário? R: Ainda continua fazendo uma interface entre o usuário e nosso negócio, só que
 > o usuário aqui é o próprio sistema operacional.
 
-#### Um pouco mais sobre `Test
+#### Um pouco mais sobre `Test`
 
 Dividimos nossos testes em:
 
