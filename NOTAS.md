@@ -129,7 +129,7 @@ Aqui os dividimos em quatro subcategorias/subdiretórios:
 * `Worker` - Qualquer serviço que executará em segundo plano, sem a interação direta com o usuário, e
   que não habilite acesso pela rede.
   
-> NOTA: Porque um **Worker** à pesar de não ter interação direta do usuário ainda está na categoria de
+> NOTA: Porque um **Worker** apesar de não ter interação direta do usuário está na categoria de
 > interface com o usuário? R: Ainda continua fazendo uma interface entre o usuário e nosso negócio, só que
 > o usuário aqui é o próprio sistema operacional.
 
