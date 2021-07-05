@@ -99,7 +99,7 @@ podemos ter o componente de domínio chamado **MinhaCompanhia.MinhaLoja.Domain**
 O **negócio** ou **business** é nosso componente que cria os métodos de negócio e implementam as regras
 em si. No caso o componente recebe o nome do próprio projeto em si, ou seja, **MinhaCompanhia.MinhaLoja**.
 
-> Um caso específico que mudaria a nomenclatura seria o caso hoje o negócio é muito grande, e você precisasse
+> Um caso específico que mudaria a nomenclatura seria o caso onde o negócio é muito grande, e você precisasse
 > de uma abstração que seria compartilhada entre várias outras soluções, então valeria um componente
 > de software de negócio chamado **MinhaCompanhia.MinhaLoja.Business**.
 
