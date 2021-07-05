@@ -137,6 +137,6 @@ Aqui os dividimos em quatro subcategorias/subdiretórios:
 
 Dividimos nossos testes em:
 
-* `End2EndTest` - Testes fim a fim, ou seja, de navegação do usuário final
+* `End2EndTest` - Testes fim a fim, ou seja, que simulam a utilização/navegação do usuário final
 * `IntegrationTest` - Teste de integração entre nossos serviços de negócio e sua infraestrutura
 * `UnitTest` - Teste das unidades isoladas de nosso negócio
