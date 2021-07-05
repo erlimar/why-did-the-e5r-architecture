@@ -53,7 +53,7 @@ Aqui vale destacar:
 * Os subdiretórios `artifacts` e `dist` são criados durante o processo de build e ignoradas em `.gitignore`
 * O subdiretório `build` guarda os scripts ou projetos do processo de construção do aplicativo. Ex [Cake](https://cakebuild.net)
 * No subdiretório `src` temos os códigos fontes do aplicativo em si
-* No subdiretório `src` temos os códigos de testes do aplicativo
+* No subdiretório `test` temos os códigos de testes do aplicativo
 
 > Usamos aqui nomes sempre com caracteres *minúsculos*, e quando há nomes compostos separamos por 
 > *traços* ou *sublinhados* ao invés de *espaços*.
