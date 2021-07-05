@@ -56,7 +56,8 @@ Aqui vale destacar:
 * No subdiretório `test` temos os códigos de testes do aplicativo
 
 > Usamos aqui nomes sempre com caracteres *minúsculos*, e quando há nomes compostos separamos por 
-> *traços* ou *sublinhados* ao invés de *espaços*.
+> *traços* ou *sublinhados* ao invés de *espaços*. Isso evitará muita dor de cabeça se você usa vários sistemas operacionais
+> como Windows, Linux e macOS. Também inclui a construção de scripts.
 
 Já a representação virtual vista na sua IDE preferencial (recomendamos [Visual Studio](https://visualstudio.com)/[VS Code](https://code.visualstudio.com) ou [JetBrains Rider](https://www.jetbrains.com/rider)) é um pouco diferente e se parece com isso:
 ```
