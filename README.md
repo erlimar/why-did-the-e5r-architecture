@@ -3,7 +3,8 @@
 Basicamente porque senti a necessidade de padronizar a forma como eu mesmo escrevia
 código DotNet nos projetos que participo, além de organizar em um único local minhas
 idéias para então, ou defendê-las em alguma discussão, ou simplesmente para compartilhá-las
-e ter uma documentação mínima para outros então criticarem.
+e ter uma documentação mínima para outros poderem utilizar em seus próprios projetos,
+e até mesmo criticarem.
 
 > Leia algumas das minhas [notas](NOTAS.md) sobre como pretendo falar do assunto.
 
