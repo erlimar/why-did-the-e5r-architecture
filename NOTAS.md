@@ -41,11 +41,13 @@ razões técnicas, normalmente envolvidas com o desenvolvimento multi-plataforma
 
 Fisicamente, nossa estrutura de diretórios é parecida com essa:
 ```
-artifacts/
-buid/
-dist/
-src/
-test/
+. my-project-folder/
+|
+|-- artifacts/
+|-- buid/
+|-- dist/
+|-- src/
++-- test/
 ```
 
 Aqui vale destacar:
@@ -61,22 +63,24 @@ Aqui vale destacar:
 
 Já a representação virtual vista na sua IDE preferencial (recomendamos [Visual Studio](https://visualstudio.com)/[VS Code](https://code.visualstudio.com) com extensão [vscode-solution-explorer](https://github.com/fernandoescolar/vscode-solution-explorer) ou [JetBrains Rider](https://www.jetbrains.com/rider)) é um pouco diferente e se parece com isso:
 ```
-Root/
-Source/
-  Core/
-  Infrastructure/
-    Data/
-    Gateway/
-    Util/
-  UserInterface/
-    App/
-    Net/
-    Tool/
-    Worker/
-Test
-  End2EndTest/
-  IntegrationTest/
-  UnitTest/
+. MySolution.sln/
+|
+|-- Root/
+|-- Source/
+|   |-- Core/
+|   |-- Infrastructure/
+|   |   |-- Data/
+|   |   |-- Gateway/
+|   |   +-- Util/
+|   +--UserInterface/
+|      |-- App/
+|      |-- Net/
+|      |-- Tool/
+|      +-- Worker/
++-- Test/
+    |-- End2EndTest/
+    |-- IntegrationTest/
+    +-- UnitTest/
 ```
 
 Destacamos:
