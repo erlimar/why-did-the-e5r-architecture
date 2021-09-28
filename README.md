@@ -8,7 +8,7 @@ e até mesmo criticarem.
 
 > Leia algumas das minhas [notas](NOTAS.md) sobre como pretendo falar do assunto.
 
-## Algumas notas sobre artigos espalhados na interner
+## Algumas notas sobre artigos espalhados na Internet
 
 De tudo que coloquei na arquitetura, se não tudo, mas a maioria vem de idéias de outras
 pessoas espalhadas na Internet. Algumas das minhas idéias vão de acordo ou diretamente
