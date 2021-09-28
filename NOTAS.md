@@ -26,20 +26,21 @@ Algumas notas sobre ensino da arquitetura
 
 ### Vários conceitos envolvidos
 
-- DDD e suas camadas
+- DDD e a arte de falar (através de nomes) com os envolvidos
+- Clean Architecture e suas camadas
 - Camada cebola e a comunicação por interface
 - Porque não uso interface de serviços de negócio?
 - Lazy load
-- Configuração/Opção/Preferência, Config/Option/Setting
+- Configuração/Opção/Preferências, Configuration/Option/Settings
 - Extensões
 
 ### Estrutura da solução .NET
 
-Projetos .NET tem duas visões bastante distintas: a visão física no sistema de arquivos e a visão virtual na
-solução dentro da IDE. Eu procuramo mantê-las o mais parecidas, mas nem sempre é possível por uma série de
+Projetos .NET tem duas visões bastante distintas: a _visão física_ no sistema de arquivos e a _visão virtual_ na
+solução dentro da IDE. Procuro mantê-las o mais parecido, mas nem sempre é possível por uma série de
 razões técnicas, normalmente envolvidas com o desenvolvimento multi-plataforma.
 
-Fisicamente, nossa estrutura de diretórios é parecida com essa:
+Fisicamente, nossa estrutura de diretórios se parece com isso:
 ```
 . my-project-folder/
 |
@@ -59,9 +60,9 @@ Aqui vale destacar:
 
 > Usamos aqui nomes sempre com caracteres *minúsculos*, e quando há nomes compostos separamos por 
 > *traços* ou *sublinhados* ao invés de *espaços*. Isso evitará muita dor de cabeça se você usa vários sistemas operacionais
-> como Windows, Linux e macOS. Também inclui a construção de scripts.
+> como Windows, Linux e macOS, ou se usa algum script, seja no processo de construção ou outra situação.
 
-Já a representação virtual vista na sua IDE preferencial (recomendamos [Visual Studio](https://visualstudio.com)/[VS Code](https://code.visualstudio.com) com extensão [vscode-solution-explorer](https://github.com/fernandoescolar/vscode-solution-explorer) ou [JetBrains Rider](https://www.jetbrains.com/rider)) é um pouco diferente e se parece com isso:
+Já a representação virtual vista na sua IDE preferencial (recomendo [JetBrains Rider](https://www.jetbrains.com/rider), [Visual Studio](https://visualstudio.com) ou [VS Code](https://code.visualstudio.com) com extensão [vscode-solution-explorer](https://github.com/fernandoescolar/vscode-solution-explorer)) é um pouco diferente e se parece com isso:
 ```
 . MySolution.sln/
 |
@@ -91,6 +92,10 @@ Destacamos:
 * Em `Source` temos o código em si de nossos componentes de software
 * Em `Test` temos o código de teste de nossos componentes
 
+> Usamos aqui nomes em *PascalCase* porque já estamos na visão virtual da IDE, e dessa forma nossa estrutura
+> se relaciona de forma homogênia tanto com os nomes de arquivos, classes e outros objetos manipulados pela IDE
+> e que usam o mesmo padrão.
+ 
 #### Um pouco mais sobre `Source/Core`
 
 A parte central de nosso código é o negócio em si, ou seja, o código de nossos métodos e regras de negócio.
@@ -103,9 +108,11 @@ podemos ter o componente de domínio chamado **MinhaCompanhia.MinhaLoja.Domain**
 O **negócio** ou **business** é nosso componente que cria os métodos de negócio e implementam as regras
 em si. No caso o componente recebe o nome do próprio projeto em si, ou seja, **MinhaCompanhia.MinhaLoja**.
 
-> Um caso específico que mudaria a nomenclatura seria o caso onde o negócio é muito grande, e você precisasse
-> de uma abstração que seria compartilhada entre várias outras soluções, então valeria um componente
-> de software de negócio chamado **MinhaCompanhia.MinhaLoja.Business**.
+> Um caso específico que mudaria a nomenclatura seria onde o negócio é muito grande, e você precisasse
+> de uma abstração que seria compartilhada entre várias outras soluções, então valeria a pena ter um 
+> componente de software de negócio chamado **MinhaCompanhia.MinhaLoja.Business**, e esse ser compartilhado
+> entre vários outros projetos, pois nesse caso o termo *Business* salienta seu significado quando usado
+> por outros projetos.
 
 #### Um pouco mais sobre `Source/Infrastructure`
 
@@ -117,7 +124,8 @@ Dividimos em três subcategorias/subdiretórios:
 * `Gateway` - Ficam as implementações de acesso a dados e/ou serviços externos, ou seja,
   que não são pertencentes ao negócio. Chamamos de portas/portões de acesso externo.
   Ex: Api de consulta CPF/CNPJ, serviços de disparo de e-mails e notificações, etc.
-* `Util` - Ficam qualquer outro que não se enquadre nos dois anteriores. Chamamos de utilitários
+* `Util` - Ficam qualquer outro que não se enquadre nos dois anteriores. Chamamos de utilitários de
+  infraestrutura.
 
 #### Um pouco mais sobre `Source/UserInterface`
 
