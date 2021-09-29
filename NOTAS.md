@@ -79,9 +79,9 @@ Já a representação virtual vista na sua IDE preferencial (recomendo [JetBrain
 |      |-- Tool/
 |      +-- Worker/
 +-- Test/
-    |-- End2EndTest/
-    |-- IntegrationTest/
-    +-- UnitTest/
+    |-- End2End/
+    |-- Integration/
+    +-- Unit/
 ```
 
 Destacamos:
@@ -149,6 +149,6 @@ Aqui os dividimos em quatro subcategorias/subdiretórios:
 
 Dividimos nossos testes em:
 
-* `End2EndTest` - Testes fim a fim, ou seja, que simulam a utilização/navegação do usuário final
-* `IntegrationTest` - Teste de integração entre nossos serviços de negócio e sua infraestrutura
-* `UnitTest` - Teste das unidades isoladas de nosso negócio
+* `End2End` - Testes fim a fim, ou seja, que simulam a utilização/navegação do usuário final
+* `Integration` - Teste de integração entre nossos serviços de negócio e sua infraestrutura
+* `Unit` - Teste das unidades isoladas de nosso negócio
