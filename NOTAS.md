@@ -44,10 +44,11 @@ Fisicamente, nossa estrutura de diretórios se parece com isso:
 ```
 . my-project-folder/
 |
-|-- benchmark/
 |-- artifacts/
+|-- benchmarks/
 |-- buid/
 |-- dist/
+|-- samples/
 |-- src/
 +-- test/
 ```
