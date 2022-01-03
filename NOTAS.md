@@ -45,7 +45,7 @@ Fisicamente, nossa estrutura de diretórios se parece com isso:
 . my-project-folder/
 |
 |-- artifacts/
-|-- benchmarks/
+|-- benchmark/
 |-- buid/
 |-- dist/
 |-- samples/
@@ -56,7 +56,7 @@ Fisicamente, nossa estrutura de diretórios se parece com isso:
 Aqui vale destacar:
 
 * Os subdiretórios `artifacts` e `dist` são criados durante o processo de build e ignoradas em `.gitignore`
-* O subdiretório `benchmarks` guarda os utilitários de análise de _benchmarks_
+* O subdiretório `benchmark` guarda os utilitários de análise de _benchmarks_
 * O subdiretório `build` guarda os scripts ou projetos do processo de construção do aplicativo. Ex [Cake](https://cakebuild.net)
 * O subdiretório `samples` guarda os projetos de exemplo
 * No subdiretório `src` temos os códigos fontes do aplicativo em si
